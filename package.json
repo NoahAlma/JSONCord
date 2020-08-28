@@ -1,0 +1,14 @@
+{
+  "name": "jsoncord",
+  "version": "1.0.0",
+  "description": "Create a simple JSON bot using the discord.js library",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NoahAlma",
+  "license": "ISC"
+}
