@@ -9,11 +9,6 @@ const commandmanager = require("./core/commands.js");
 let bot = new Bot(null);
 const config = require("./bot.json");
 
-if (config.settings.debug) {
-    Log.warn("Debug mode is on!");
-    bot.getClient().on("debug", (d) => Log.debug(d));
-}
-
 bot.getClient().on("ready", () => {
     Log.info(`Logged in as ${bot.getClient().user.tag}`);
     if (config.presence.enabled) {
