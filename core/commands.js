@@ -29,7 +29,7 @@ module.exports = {
                                     console.log("[ROLE] Role " + msg.guild.roles.cache.get(command.role_id).name + " has been removed to " + msg.author.username);
                                 }
                             } else {
-                                Log.error("(" + command.command + ") This role doesn't exist!");
+                                Log.error("Command: " + command.command + " - This role doesn't exist!");
                             }
                             break;
                         case "give_role":
@@ -42,7 +42,7 @@ module.exports = {
                                     msg.channel.send("You already have this role.")
                                 }
                             } else {
-                                Log.error("(" + command.command + ") This role doesn't exist!");
+                                Log.error("Command: " + command.command + " - This role doesn't exist!");
                             }
                             break;
                         case "remove_role":
@@ -55,7 +55,7 @@ module.exports = {
                                     msg.channel.send("You do not have this role.");
                                 }
                             } else {
-                                Log.error("(" + command.command + ") This role doesn't exist!");
+                                Log.error("Command: " + command.command + " - This role doesn't exist!");
                             }
                             break;
                         default:
@@ -73,5 +73,4 @@ module.exports = {
         commandlist.push(command);
         Log.info("Command " + command.command + " has loaded.");
     },
-
 }
