@@ -1,7 +1,6 @@
 {
-    "general": {
+    "settings": {
         "token": "myToken",
-        "debug": false
     },
     "commands": [{
         "command": "!hello",
