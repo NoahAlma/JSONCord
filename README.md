@@ -34,7 +34,8 @@ Example bot.json file
         "type": "playing",
         "text": "Hola!"
     }
-}```
+}
+```
 
 The `send_message` action will send a message to the same channel and `send_dm` sends a dm to the message author.
 
