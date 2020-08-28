@@ -1,0 +1,22 @@
+{
+    "general": {
+        "token": "myToken",
+        "debug": false
+    },
+    "commands": [{
+        "command": "!hello",
+        "action": "send_message",
+        "message": "Hello!"
+    },
+    {
+        "command": "!hi",
+        "action": "send_dm",
+        "message": "Hello there."
+    }   
+],
+    "presence": {
+        "enabled": true,
+        "type": "playing",
+        "text": "Hola!"
+    }
+}
