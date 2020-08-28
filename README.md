@@ -16,7 +16,6 @@ Example bot.json file
 {
     "general": {
         "token": "myToken",
-        "debug": false
     },
     "commands": [{
         "command": "!hello",
