@@ -17,7 +17,7 @@ Example bot.json file
 
 ```json
 {
-    "general": {
+    "settings": {
         "token": "myToken",
     },
     "commands": [{
