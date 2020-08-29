@@ -4,6 +4,7 @@ const Bot = require("./lib/bot");
 Log.info("JSONCord version 1.0.0");
 
 const fs = require("fs");
+const mods = "./modifications/";
 var stdio = require("stdio");
 const commandmanager = require("./core/commands.js");
 let bot = new Bot(null);
@@ -26,9 +27,18 @@ bot.getClient().on("ready", () => {
                 url: config.presence.url
             });
         } else {
-            console.error("[ERROR] Unknown welcome message type : " + config.welcome.type);
+            console.error("An unknown error occured.");
         }
     }
+
+    fs.readdir(mods, (err, files) => {
+        files.forEach(file => {
+            if(file.endsWith(".js")){
+                Log.info(`Registered mods - ${file}`);
+                require(mods+file).handle(bot.getClient());
+            }
+        });
+    })
 });
 
 
