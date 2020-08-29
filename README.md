@@ -1,5 +1,8 @@
 # JSONCord version 1.0.0
 
+[![JavaScript Style Guide: Good Parts](https://img.shields.io/badge/code%20style-goodparts-brightgreen.svg?style=flat)](https://github.com/dwyl/goodparts "JavaScript The Good Parts")
+
+
 Welcome to JSONCord -- the easy way to make a simple command/response bot using the discord.js library.
 
 How to use:
