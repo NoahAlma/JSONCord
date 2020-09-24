@@ -55,7 +55,7 @@ For example:
 {
     "command": "!giveMeRole",
     "action": "give_role",
-    "role_id": "123456789012345678"
+    "role_id": "123456789012345678
 }
 ```
 
