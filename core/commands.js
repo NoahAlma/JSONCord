@@ -19,7 +19,7 @@ module.exports = {
                             msg.author.send(command.message);
                             break;
                         case "alternate_role":
-                            if (msg.channel.type == "dm") return;
+                            if (msg.channel.type === "dm") return;
                             if (msg.guild.roles.cache.get(command.role_id)) {
                                 if (!msg.member.roles.cache.has(command.role_id)) {
                                     msg.member.roles.add(msg.guild.roles.cache.get(command.role_id));
