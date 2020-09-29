@@ -1,6 +1,6 @@
 {
   "name": "jsoncord",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a simple JSON bot using the discord.js library",
   "main": "main.js",
   "directories": {
