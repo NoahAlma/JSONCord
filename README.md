@@ -73,7 +73,7 @@ Example:
 ```json
 "presence": {
     "enabled": true,
-    "type": "watching",
+    "type": "streaming",
     "text": "JSONCord",
     "url": "https://www.twitch.tv/ninja"
 }
