@@ -78,6 +78,16 @@ Example:
     "url": "https://www.twitch.tv/ninja"
 }
 ```
+
+or
+
+```json
+"presence": {
+    "enabled": true,
+    "type": "playing",
+    "text": "JSONCord",
+}
+```
     
 
 Report bugs on this repository! 
