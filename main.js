@@ -35,7 +35,7 @@ bot.getClient().on("ready", () => {
         files.forEach(file => {
             if(file.endsWith(".js")){
                 Log.info(`Registered mods - ${file}`);
-                require(mods+file).handle(bot.getClient());
+                require(mods + file).handle(bot.getClient());
             }
         });
     })
